@@ -1,7 +1,6 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
 from staticfiles.urls import staticfiles_urlpatterns
-from django.conf.urls.static import static
 from django.views.generic.simple import direct_to_template
 
 # Uncomment the next two lines to enable the admin:

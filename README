@@ -1,8 +1,11 @@
 to install this application on top of an existing GeoNode site, please follow the next steps:
 
 #. Activate GeoNode's virtual environment
+    source /var/lib/geonode/bin/activate
+#. Make sure your user has write permission for /var/lib/geonode (or use root)
 #. Install Yemen-Data using::
     python setup.py install
+#/ Create a link to local_settings.py
 #. Run a syncdb to create any missing tables
 #. Update /var/www/wsgi/geonode.wsgi to use yemendata.settings instead of geonode.settings
 #. Run geonode collectstatic to update the media
